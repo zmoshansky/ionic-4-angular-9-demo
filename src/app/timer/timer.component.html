@@ -1,0 +1,15 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Time: {{minutes | async}}:{{seconds | async}}</ion-card-title>
+      <!-- :{{milliseconds | async}}</ion-card-title> -->
+  </ion-card-header>
+  <ion-card-content>
+
+    <div class="buttons">
+      <ion-row>
+        <ion-button (click)="reset()">Reset</ion-button>
+        <ion-button (click)="start()">{{startPauseText | async}}</ion-button>
+      </ion-row>
+    </div>
+  </ion-card-content>
+</ion-card>
